@@ -25,6 +25,12 @@
     margin-bottom: 16pt;
 }
 
+.section.content p,a,span
+{
+    margin: 0;
+    font-size: 12pt;
+}
+
 .section.header h1
 {
     margin: 0;
@@ -37,7 +43,7 @@
     padding: 0;
 }
 
-p.description {
+.section.content p.description {
     margin: 0;
     margin-left: 14pt;
     font-style: italic;
