@@ -3,60 +3,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         
-        <title>Projective Pentagon</title>
+        <title>Maxwell Hosler</title>
 
-        <script id="vertex-shader" type="x-shader/x-vertex">
-            attribute  vec3 vPosition;
-            attribute  vec4 vColor;
-            varying    vec4 fColor;
-			
-			uniform vec3 pt1;
-			uniform vec3 pt2;
-			uniform vec3 pt3;
-			
-			uniform float ghost;
-			
-            void main()
-            {    
-                fColor = ghost*vColor;
-				
-				highp mat3 proj_trans = mat3( pt1[0], pt2[0], pt3[0],
-				                              pt1[1], pt2[1], pt3[1],
-											  pt1[2], pt2[2], pt3[2] );
-											  
-				highp vec3 homogenous = proj_trans*vPosition;
-				homogenous = (1.0/homogenous[2])*homogenous;
-				
-                gl_Position = vec4(homogenous[0],homogenous[1],0,1);
-				gl_PointSize = 20.0;
-
-            }
-        </script>
-
-        <script id="fragment-shader" type="x-shader/x-fragment">
-
-            precision mediump float;
-
-            varying vec4 fColor;
-
-            void
-            main()
-            {
-                gl_FragColor = fColor;
-            }
-        </script>
-
-        <script type="text/javascript" src="Common/webgl-utils.js"></script>
-        <script type="text/javascript" src="Common/initShaders.js"></script>
-        <script type="text/javascript" src="Common/MV.js"></script>
-		<script type="text/javascript" src="Common/MV2.js"></script>
-        <script type="text/javascript" src="pentavis.js"></script>
+        
     </head>
 
     <body id="body">
-        <canvas id="gl-canvas" width="800" height="800">
-        Oops ... your browser doesn't support the HTML5 canvas element
-        </canvas>
+        
+        <a href="./proj-toy/index.html"> Projective transformation toy </a>
 
     </body>
 
