@@ -1,0 +1,28 @@
+.column-holder
+{
+    align-items: stretch;
+
+    width: 100%;
+}
+
+.column
+{
+    margin: 0;
+    flex: 1;
+}
+
+@media only screen and (min-width: 600px) {
+    .column-holder {
+        display: flex;
+        flex-direction: row;    
+    }
+
+    .column:first-child
+    {
+        margin-right: 5pt;
+    }
+    .column:last-child
+    {
+        margin-left: 5pt;
+    }
+}

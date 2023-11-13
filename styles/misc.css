@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-info
+{
+    align-items: center;
+    padding: 5pt;
+    background-color: rgba(240, 248, 255, 0.651);
+    border-radius: var(--section-radius);
+}
+
+#contact-info p
+{
+    margin: 0;
+    margin-left: 5pt;
+    margin-right: 50pt;
+    font-weight: 100;
+    text-align: left;
+}
+
+#title-bar
+{
+    align-items: center;
+    justify-content: space-between;
+}
