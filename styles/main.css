@@ -1,0 +1,11 @@
+.header {
+    background-color: rgb(151, 183, 243);
+    border-radius: 5pt;
+    margin: 10pt;
+    padding: 10pt;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
