@@ -2,6 +2,7 @@
 {
     --section-radius: 2pt;
     --area-margin: 3pt;
+    --shadow: drop-shadow(2px 2px 2px #9c9caa8f);
 }
 
 @font-face {
@@ -19,4 +20,5 @@ body
 img {
     border-radius: 2pt;
     margin: var(--area-margin);
+    filter: var(--shadow);
 }
