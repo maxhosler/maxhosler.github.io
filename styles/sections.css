@@ -1,17 +1,17 @@
 .section
 {
-    border-radius: 2pt;
+    border-radius: var(--section-radius);
     margin: var(--area-margin);
 }
 
 .section.header
 {
-    background-color: rgb(163, 181, 214);
+    background-color: rgb(178, 194, 223);
     padding: 10pt;
     font-weight: bold;
 }
 
-.section.subheader
+.section.chunk div:first-child 
 {
     background-color: rgb(165, 175, 196);
     padding: 5pt;
@@ -22,37 +22,31 @@
     margin-bottom: 0;
 }
 
-.section.content
+.section.chunk div:last-child
 {
     background-color: rgb(229, 231, 236);
     padding: 5pt;
     padding-left: 10pt;
-    margin-bottom: 16pt;
+    margin-bottom: 12pt;
 
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-top: 0;
 }
 
-.section.content p,a,span
+.section.chunk div:last-child p,a,span
 {
     margin: 0;
     font-size: 12pt;
 }
 
-.section.header h1
+.section h1,h2,h3,h4
 {
     margin: 0;
     padding: 0;
 }
 
-.section.subheader h1
-{
-    margin: 0;
-    padding: 0;
-}
-
-.section.content p.description {
+.section.chunk div:last-child p.description {
     margin: 0;
     margin-left: 14pt;
     font-style: italic;
