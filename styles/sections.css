@@ -16,13 +16,22 @@
     background-color: rgb(165, 175, 196);
     padding: 5pt;
     font-weight: bold;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
 }
 
 .section.content
 {
     background-color: rgb(229, 231, 236);
     padding: 5pt;
+    padding-left: 10pt;
     margin-bottom: 16pt;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
 }
 
 .section.content p,a,span
