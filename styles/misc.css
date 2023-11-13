@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-info
+{
+    height: 100%;
+    align-items: center;
+}
+
+#contact-info p
+{
+    margin: 0;
+    margin-left: 5pt;
+}

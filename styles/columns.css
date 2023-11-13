@@ -1,0 +1,14 @@
+.column-holder
+{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    width: 100%;
+}
+
+.column
+{
+    margin: 0;
+    flex: 1;
+}

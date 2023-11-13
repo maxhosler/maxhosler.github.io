@@ -1,11 +1,21 @@
-.header {
-    background-color: rgb(151, 183, 243);
-    border-radius: 5pt;
-    margin: 10pt;
-    padding: 10pt;
+:root
+{
+    --area-margin: 3pt;
 }
 
-.header h1 {
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+  }
+
+body
+{
+    font: 1.2em "Open Sans", sans-serif;
+}
+
+img {
+    border-radius: 2pt;
+    margin: var(--area-margin);
 }

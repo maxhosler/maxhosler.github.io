@@ -1,0 +1,46 @@
+.section
+{
+    border-radius: 2pt;
+    margin: var(--area-margin);
+}
+
+.section.header
+{
+    background-color: rgb(163, 181, 214);
+    padding: 10pt;
+    font-weight: bold;
+}
+
+.section.subheader
+{
+    background-color: rgb(165, 175, 196);
+    padding: 5pt;
+    font-weight: bold;
+}
+
+.section.content
+{
+    background-color: rgb(229, 231, 236);
+    padding: 5pt;
+    margin-bottom: 16pt;
+}
+
+.section.header h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+.section.subheader h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+p.description {
+    margin: 0;
+    margin-left: 14pt;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 10pt;
+}
